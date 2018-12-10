@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.ExamenFinal.Wcf", "PAW.ExamenFinal.Wcf\PAW.ExamenFinal.Wcf.csproj", "{74715112-1A50-43B2-A80D-F25032342AD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.ExamenFinal.ModelDB", "PAW.ExamenFinal.ModelDB\PAW.ExamenFinal.ModelDB.csproj", "{42206BA9-A3FC-42D8-B785-5F7216434C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.ExamenFinal.WebApp", "PAW.ExamenFinal.WebApp\PAW.ExamenFinal.WebApp.csproj", "{19B2BE80-B7CB-4B1F-B6BA-E946E8EBCF1B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74715112-1A50-43B2-A80D-F25032342AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74715112-1A50-43B2-A80D-F25032342AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74715112-1A50-43B2-A80D-F25032342AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74715112-1A50-43B2-A80D-F25032342AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42206BA9-A3FC-42D8-B785-5F7216434C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42206BA9-A3FC-42D8-B785-5F7216434C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42206BA9-A3FC-42D8-B785-5F7216434C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42206BA9-A3FC-42D8-B785-5F7216434C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B2BE80-B7CB-4B1F-B6BA-E946E8EBCF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B2BE80-B7CB-4B1F-B6BA-E946E8EBCF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B2BE80-B7CB-4B1F-B6BA-E946E8EBCF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B2BE80-B7CB-4B1F-B6BA-E946E8EBCF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
