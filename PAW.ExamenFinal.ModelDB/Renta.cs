@@ -14,6 +14,11 @@ namespace PAW.ExamenFinal.ModelDB
     
     public partial class Renta
     {
+         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Cliente()
+        {
+            this.Renta = new HashSet<Renta>();
+        }
         public int IdRenta { get; set; }
         public Nullable<System.DateTime> FechaRenta { get; set; }
         public Nullable<System.DateTime> FechaDebeDevolver { get; set; }
@@ -23,5 +28,8 @@ namespace PAW.ExamenFinal.ModelDB
     
         public virtual Cliente Cliente { get; set; }
         public virtual CopiaPelicula CopiaPelicula { get; set; }
+
+             [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Renta> Renta { get; set; }
     }
 }
