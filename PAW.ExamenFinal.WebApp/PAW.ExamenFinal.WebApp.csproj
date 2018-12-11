@@ -132,7 +132,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Controllers\CopiaPeliculasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RentasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -174,6 +177,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Clientes\Create.cshtml" />
+    <Content Include="Views\Clientes\Delete.cshtml" />
+    <Content Include="Views\Clientes\Details.cshtml" />
+    <Content Include="Views\Clientes\Edit.cshtml" />
+    <Content Include="Views\Clientes\Index.cshtml" />
+    <Content Include="Views\CopiaPeliculas\Create.cshtml" />
+    <Content Include="Views\CopiaPeliculas\Delete.cshtml" />
+    <Content Include="Views\CopiaPeliculas\Details.cshtml" />
+    <Content Include="Views\CopiaPeliculas\Edit.cshtml" />
+    <Content Include="Views\CopiaPeliculas\Index.cshtml" />
+    <Content Include="Views\Rentas\Create.cshtml" />
+    <Content Include="Views\Rentas\Delete.cshtml" />
+    <Content Include="Views\Rentas\Details.cshtml" />
+    <Content Include="Views\Rentas\Edit.cshtml" />
+    <Content Include="Views\Rentas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -193,6 +211,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PAW.ExamenFinal.ModelDB\PAW.ExamenFinal.ModelDB.csproj">
+      <Project>{42206ba9-a3fc-42d8-b785-5f7216434c96}</Project>
+      <Name>PAW.ExamenFinal.ModelDB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PAW.ExamenFinal.Wcf\PAW.ExamenFinal.Wcf.csproj">
       <Project>{74715112-1a50-43b2-a80d-f25032342ad1}</Project>
       <Name>PAW.ExamenFinal.Wcf</Name>
