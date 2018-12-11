@@ -14,6 +14,27 @@ namespace PAW.ExamenFinal.Wcf
     {
 
         [OperationContract]
+        ModelDB.Cliente IdentificarCliente(int idCliente);
+
+        [OperationContract]
+        int CantidadRenta(int idCPelicula);
+
+        [OperationContract]
+        bool PerdidaDañada(int idCPelicula);
+
+        [OperationContract]
+        IList<ModelDB.Renta> PeliculasRentadas(DateTime inicio, DateTime final);
+
+        [OperationContract]
+        IList<ModelDB.Renta> RentasPorGenero (string genero, DateTime inicio, DateTime final);
+
+        [OperationContract]
+        IList<ModelDB.Cliente> MenoresDeEdad(string genero);
+
+
+
+
+        [OperationContract]
         string GetData(int value);
 
         [OperationContract]
