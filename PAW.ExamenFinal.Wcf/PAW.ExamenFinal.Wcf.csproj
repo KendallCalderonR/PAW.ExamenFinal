@@ -72,6 +72,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logica\Accion\Metodo_de_Accion.cs" />
     <Compile Include="Logica\Servicio\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -80,7 +81,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Logica\Accion\" />
     <Folder Include="Logica\Especificacion\" />
     <Folder Include="Logica\Repositorio\" />
   </ItemGroup>
