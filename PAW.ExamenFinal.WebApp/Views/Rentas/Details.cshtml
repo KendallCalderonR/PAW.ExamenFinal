@@ -1,0 +1,58 @@
+﻿@model PAW.ExamenFinal.ModelDB.Renta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Renta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaRenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaRenta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDebeDevolver)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDebeDevolver)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDevolucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDevolucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CopiaPelicula.NombreOriginal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CopiaPelicula.NombreOriginal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdRenta }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
